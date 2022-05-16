@@ -1,6 +1,6 @@
 Crypto = {
-        Lower = 500,
-        Upper = 5000,
+    Lower = 500,
+    Upper = 5000,
     History = {
         ["qbit"] = {}
     },
@@ -18,7 +18,7 @@ Crypto = {
         RebootInfo = {
             state = false,
             percentage = 0
-        },
+        }
     },
 
     -- For auto updating the value of qbit
@@ -27,18 +27,15 @@ Crypto = {
 
     -- Crashes or luck
     ChanceOfCrashOrLuck = 2, -- This is in % (1-100)
-    Crash = {20,80}, -- Min / Max
-    Luck = {20,45}, -- Min / Max
+    Crash = {20, 80}, -- Min / Max
+    Luck = {20, 45}, -- Min / Max
 
     -- If not not Chance of crash or luck, then this shit
     ChanceOfDown = 30, -- If out of 100 hits less or equal to
     ChanceOfUp = 60, -- If out of 100 is greater or equal to
-    CasualDown = {1,10}, -- Min / Max (If it goes down)
-    CasualUp = {1,10}, -- Min / Max (If it goes up)
+    CasualDown = {1, 10}, -- Min / Max (If it goes down)
+    CasualUp = {1, 10} -- Min / Max (If it goes up)
 }
-
-
-
 
 Ticker = {
     Enabled = false, -- Decide whether the real life price ticker should be enabled or not :)  
@@ -50,6 +47,6 @@ Ticker = {
     Error_handle = {
         ['fsym is a required param.'] = 'Config error: Invalid / Missing coin name',
         ['tsyms is a required param.'] = 'Config error: Invalid / Missing currency',
-        ['cccagg_or_exchange'] = 'Config error: Invalid currency / coin combination', -- For some reason api throws this error if either coin or currency is invalid
-    },
+        ['cccagg_or_exchange'] = 'Config error: Invalid currency / coin combination' -- For some reason api throws this error if either coin or currency is invalid
+    }
 }
